@@ -1,0 +1,74 @@
+:root{
+	--urlbar-corner-radius: 8px;
+}
+.urlbarView {
+	border-radius: var(--urlbar-corner-radius) !important;
+	box-shadow: 0px 0px 40px rgba(0, 0, 0, 35%) !important;
+	box-shadow: none !important;
+	margin: auto !important;
+}
+
+.urlbar, #urlbar-background, .identity-box-button, .urlbar-page-action{
+  border-radius: var(--urlbar-corner-radius) !important;
+}
+
+/* Url bar suggestions' selected row */
+.urlbarView:not(.megabar) .urlbarView-row:not([type="tip"])[selected],
+.urlbarView.megabar .urlbarView-row:not([type="tip"])[selected] > .urlbarView-row-inner {
+/* 	background: #f9ff99 !important; */
+/* 	color: black !important; */
+	fill-opacity: 1;
+}
+
+/* The text that says 'Search with ...' */
+.urlbarView-action {
+	color: black !important;
+}
+
+.urlbarView-row {
+  border-radius: var(--urlbar-corner-radius) !important;
+  border: none !important;
+  background: none !important;
+}
+
+/* Url bar suggestions' row that is being hovered over */
+.urlbarView-row:hover {
+/*   background-color: none !important; */
+  background-image: linear-gradient(77deg, #ffc386, #ff8989) !important;
+  color: black !important;
+  border-radius: var(--urlbar-corner-radius) !important;
+  border: 0px !important;
+}
+
+.urlbarView-action{
+	background-image: linear-gradient(77deg, #ebff94, #80ffe3) !important;
+  color: black !important;
+  border-radius: 2px !important;
+  border: 0px !important;
+}
+
+.urlbarView-row-inner {
+  border: none !important;
+  background: none !important;
+}
+
+/* Text that says: This time, search with: */
+#urlbar-one-offs-header-label {
+	font-family: "Sarasa Mono T SC", sans-serif !important;
+	font-size: 12pt !important;
+	font-weight: 700 !important;
+}
+
+#urlbar-background,
+#urlbar-container,
+.urlbar-input-box {
+	background-image: none !important;
+}
+
+#urlbar #urlbar-input {
+	text-align: center !important;  
+}
+
+#urlbar[open] #urlbar-input {
+	text-align: left !important;  
+}

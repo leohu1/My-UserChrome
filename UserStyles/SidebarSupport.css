@@ -1,0 +1,28 @@
+@-moz-document url-prefix(chrome://browser/content/places) {
+  ::-moz-tree-row(selected) {
+    -moz-appearance: none !important;
+    background-image: linear-gradient(to left, #c97dff, #ff8989) !important;
+    color: black !important;
+  }
+  
+  ::-moz-tree-row(hover) {
+    -moz-appearance: none !important;
+    background-image: linear-gradient(to left, #a1ffe3, #91ceff) !important;
+    color: black !important;
+  }
+  
+  ::-moz-tree-row(), .sidebar-panel .sidebar-placesTreechildren::-moz-tree-cell-text() {
+    border-radius: 7px !important;
+    margin-top:5px !important;
+    margin-bottom:5px !important;
+    margin-right:15px !important;
+    margin-left:5px !important;
+
+  }
+  
+  .sidebar-panel .sidebar-placesTreechildren::-moz-tree-cell-text(hover),
+  .sidebar-panel .sidebar-placesTreechildren::-moz-tree-cell-text(selected)
+  {
+      color: black !important;
+    }
+}

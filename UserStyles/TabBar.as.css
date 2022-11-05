@@ -1,0 +1,36 @@
+:root {
+	--gap-between-tabs: 5px;
+}
+.tabbrowser-tab {
+	margin-inline-end: var(--gap-between-tabs) !important;
+}
+
+.tabbrowser-tab:hover:not([selected="true"]) .tab-background,
+#firefox-view-button:hover:not([aria-selected="true"]) .toolbarbutton-icon, 
+#tabs-newtab-button:hover:not([selected="true"]) .toolbarbutton-icon{
+	background-image: linear-gradient(to left, #a1ffe3, #91ceff) !important;
+	color: black !important;
+}
+
+.tab-background[selected="true"],
+#firefox-view-button[aria-selected="true"] .toolbarbutton-icon {
+	background-image: linear-gradient(to left, #c97dff, #ff8989) !important;
+	color: black !important;
+	font-weight:bold;
+}
+
+.tabbrowser-tab[selected="true"] label[class="tab-text tab-label"], 
+.tabbrowser-tab:hover label[class="tab-text tab-label"]
+/* .tabbrowser-tab[selected="true"] .tab-close-button,
+.tabbrowser-tab:hover .tab-close-button */
+{
+	color: black !important;
+}
+
+/* #tabs-newtab-button:hover .toolbarbutton-icon{
+	  color: green !important;
+} */
+
+.tab-close-button:hover {
+  background-color: #ff4747 !important;  
+}
